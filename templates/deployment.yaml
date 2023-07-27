@@ -35,17 +35,17 @@ spec:
           #   httpGet:
           #     path: /v1/health/liveness
           #     port: 3000
-          #   initialDelaySeconds: 15
-          #   periodSeconds: 20
+          #   initialDelaySeconds: 5
+          #   periodSeconds: 5
           # readinessProbe:
           #   httpGet:
           #     path: /v1/health/readiness
           #     port: 3000
           #   initialDelaySeconds: 5
-          #   periodSeconds: 10
-            # preStop:
-            #   exec:
-            #     command: ["/bin/sh", "-c", "sleep 120"]
+          #   periodSeconds: 5
+          # preStop:
+          #   exec:
+          #     command: ["/bin/sh", "-c", "sleep 120"]
 
       # - name: envoy
       #   image: envoyproxy/envoy:v1.19.1

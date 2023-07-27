@@ -31,4 +31,4 @@ kubectl describe pod pod_name
 
 kubectl exec -it pod/fetch-deployment-68c5546656-nmlxx -c samtest bash
 
-kubectl --namespace default port-forward pod/fetch-deployment-68c5546656-kcjhx 8080:80
+kubectl --namespace default port-forward pod/fetch-deployment-5fbfccfd9-q248v 8080:80
